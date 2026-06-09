@@ -1,4 +1,4 @@
-#Enterprise DevOps App
+# Enterprise DevOps App
 
 Overview
 
@@ -24,7 +24,7 @@ The API Gateway acts as a single entry point and routes requests to the backend 
 |     Port 3001     |         |     Port 3002     |
 +-------------------+         +-------------------+
 
-#Technologies Used
+# Technologies Used
 
 * Node.js
 * Express.js
@@ -33,7 +33,7 @@ The API Gateway acts as a single entry point and routes requests to the backend 
 * Git
 * GitHub#
 
-#Project Structure
+# Project Structure
 
 enterprise-devops-app/
 │
@@ -56,7 +56,7 @@ enterprise-devops-app/
 ├── .gitignore
 └── README.md
 
-#Features
+# Features
 
 * Containerized microservices
 * API Gateway routing
@@ -66,7 +66,7 @@ enterprise-devops-app/
 * Git version control
 
 
-#Build Docker Images
+# Build Docker Images
 docker build -t user-service:v1 ./user-service
 
 docker build -t order-service:v1 ./order-service
@@ -76,24 +76,24 @@ docker build -t api-gateway:v1 ./api-gateway
 #Run Using Docker Compose
 docker compose up -d
 
-#Verify running containers:
+# Verify running containers:
 docker ps
 
-#Stop all services:
+# Stop all services:
 docker compose down
 
-#API Endpoints
+# API Endpoints
 
-#Get Users
+# Get Users
 
 curl http://localhost:8080/users
 
-#Get Orders
+# Get Orders
 
 curl http://localhost:8080/orders
 
 
-#Validation
+# Validation
 
 The project was successfully validated by:
 
@@ -103,7 +103,7 @@ The project was successfully validated by:
 * Testing API Gateway routing
 * Accessing backend services through a single endpoint
 
-#Learning Outcomes
+# Learning Outcomes
 
 Through this project, I gained hands-on experience with:
 
@@ -115,7 +115,7 @@ Through this project, I gained hands-on experience with:
 * Git and GitHub workflows
 * DevOps best practices
 
-#Author
+# Author
 
 Nkechi Queeneth Ogbuji
 
