@@ -1,0 +1,23 @@
+name: Enterprise DevOps CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build User Service
+        run: docker build -t user-service ./user-service
+
+      - name: Build Order Service
+        run: docker build -t order-service ./order-service
+
+      - name: Build API Gateway
+        run: docker build -t api-gateway ./api-gateway
