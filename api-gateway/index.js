@@ -7,13 +7,13 @@ app.get('/health', (req, res) => {
 });
 
 app.get('/users', async (req, res) => {
-  const response = await fetch('http://localhost:3001/users');
+  const response = await fetch('http://user-service:3001/users');
   const users = await response.json();
   res.json(users);
 });
 
 app.get('/orders', async (req, res) => {
-  const response = await fetch('http://localhost:3002/orders');
+  const response = await fetch('http://order-service:3002/orders');
   const orders = await response.json();
   res.json(orders);
 });
