@@ -122,3 +122,16 @@ Nkechi Queeneth Ogbuji
 Cloud & DevOps Engineer
 
 GitHub: https://github.com/NkechiOgbuji
+
+## CI/CD Pipeline
+
+This project uses GitHub Actions to automate application validation.
+
+Pipeline Features:
+
+- Automatic trigger on push to main
+- Source code checkout
+- Docker image build validation
+- Continuous Integration workflow
+
+Workflow Status: Successful
